@@ -44,3 +44,7 @@
 
 ### images
 
+# Admin layout
+# User layout
+# Public layout
+
