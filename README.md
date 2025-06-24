@@ -8,3 +8,39 @@
 #5- npm i ngx-translate-messageformat-compiler
 #6- npm i bootstrap
 #7- Font-Awesome icons
+
+# Project structure:
+
+## Core:
+### Account
+### Cart
+### favorites
+### Home
+### Products
+### Orders
+### Profile
+### Notifications
+
+## Admin:
+### Products
+### Categories
+### Feedback
+### Notifications
+
+## Shared:
+### components
+### models
+### enums
+### services
+### modules
+
+## Aassets:
+
+### i18n:
+#### ar.json
+#### en.json
+#### fr.json
+#### ru.json
+
+### images
+
