@@ -1,0 +1,23 @@
+header {
+    .container {
+        .navbar-brand {
+            img {
+                width: 80px;
+            }
+        }
+        .navbar-icons {
+            span {
+                i {
+                    color: rgba($color: #000000, $alpha: 0.7);
+                    transition: 0.15s ease-in-out;
+                    &:hover {
+                        color: rgba($color: #000000, $alpha: 0.9)
+                    }
+                }
+            }
+        }
+    }
+}
+h2 {
+    display: none;
+}
