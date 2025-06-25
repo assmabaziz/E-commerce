@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
+import { MegaMenuComponent } from "./mega-menu/mega-menu.component";
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [],
+  imports: [MegaMenuComponent],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss'
 })
