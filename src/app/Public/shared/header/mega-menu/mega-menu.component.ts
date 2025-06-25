@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-mega-menu',
@@ -8,5 +8,5 @@ import { Component } from '@angular/core';
   styleUrl: './mega-menu.component.scss'
 })
 export class MegaMenuComponent {
-
+@Input({required: true}) showMenu = false
 }

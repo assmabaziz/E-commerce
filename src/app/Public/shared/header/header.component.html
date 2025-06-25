@@ -21,7 +21,7 @@
       >
         <ul class="navbar-nav mb-2 mb-lg-0 text-capitalize">
           <li class="nav-item cursor-pointer">
-            <a class="nav-link active" aria-current="page">home</a>
+            <a class="nav-link" aria-current="page">home</a>
           </li>
           <li
             class="nav-item dropdown cursor-pointer position-relative"
@@ -29,7 +29,7 @@
             (mouseleave)="toggleMenu(false)"
           >
             <a class="nav-link dropdown-toggle">shop</a>
-            <app-mega-menu/>
+            <app-mega-menu [showMenu]="showMenu"/>
           </li>
           <li class="nav-item cursor-pointer">
             <a class="nav-link">

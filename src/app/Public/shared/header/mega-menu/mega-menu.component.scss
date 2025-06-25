@@ -1,27 +1,34 @@
 @import "../../../../../assets/sass/main.scss";
 .mega-menu {
-    width: 40vw;
-    left: 50%;
-    transform: translateX(-50%);
-    div {
-        &:not(:last-of-type) {
-            border-right: solid 1px rgba(214, 212, 212, 0.74);
-        }
-        h4{
-            margin-bottom: 0.5rem;
-        }
-        ul {
-            li {
-                margin-bottom: 0.5rem;
-                a{
-                    text-decoration: none;
-                    color: #000;
-                    transition: $transition;
-                    &:hover {
-                        color: #007BFF;
-                    }
-                }
-            }
-        }
+  display: none;
+  width: 40vw;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  &.show {
+    display: flex;
+    justify-content: space-around;
+  }
+  div {
+    &:not(:last-of-type) {
+      border-right: solid 1px rgba(214, 212, 212, 0.74);
     }
+    h4 {
+      margin-bottom: 0.5rem;
+    }
+    ul {
+      li {
+        margin-bottom: 0.5rem;
+        a {
+          text-decoration: none;
+          color: #000;
+          transition: $transition;
+          &:hover {
+            color: #007bff;
+          }
+        }
+      }
+    }
+  }
 }
