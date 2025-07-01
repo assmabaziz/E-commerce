@@ -1,0 +1,33 @@
+@import "../../../../assets/sass/main";
+section {
+  .wrapper {
+    width: 90%;
+    .banner-title {
+      h1,
+      span {
+        color: $main-color;
+        font-size: 4.5rem;
+        line-height: 55px;
+      }
+    }
+    .banner-text {
+      font-size: 1.5rem;
+      line-height: 25px;
+    }
+    .banner-btn {
+      button {
+        background-color: $main-color;
+        box-shadow: 2px 36px 38px 0px rgba(0,0,0,0.29);
+        transition: $transition;
+        &:hover {
+            background-color: $color-hover;
+        }
+      }
+    }
+  }
+  .banner-image {
+    img {
+      width: 90%;
+    }
+  }
+}

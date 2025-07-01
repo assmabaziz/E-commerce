@@ -1,0 +1,16 @@
+@import"../../assets/sass/main.scss";
+main{
+    background-color: $baner-background-color;
+    .container {
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+        }
+        section {
+            padding-top: 100px;
+            height: 100vh;
+        }
+    }
+}
