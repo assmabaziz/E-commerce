@@ -1,7 +1,6 @@
 @import"../../assets/sass/main.scss";
 main{
     background-color: $baner-background-color;
-    .container {
         header {
             position: fixed;
             top: 0;
@@ -10,7 +9,6 @@ main{
         }
         section {
             padding-top: 100px;
-            height: 100vh;
+            // height: 100vh;
         }
     }
-}

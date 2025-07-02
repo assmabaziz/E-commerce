@@ -1,17 +1,28 @@
-@import"../../../../assets/sass/main.scss";
-    .container {
-        .navbar-brand {
-            img {
-                width: 80px;
-            }
+@import "../../../../assets/sass/main.scss";
+.container {
+  .navbar-brand {
+    img {
+      width: 80px;
+    }
+  }
+  .navbar-icons {
+    span {
+      i {
+        color: rgba($color: #000000, $alpha: 0.7);
+        transition: $transition;
+        &:hover {
+          color: rgba($color: #000000, $alpha: 0.9);
         }
-        .navbar-icons {
-            span {
-                i {
-                    color: rgba($color: #000000, $alpha: 0.7);
-                    transition: $transition;
-                    &:hover {
-                        color: rgba($color: #000000, $alpha: 0.9)
-                    }
-                }
-            }}}
+      }
+    }
+    button {
+      border: solid 1px $main-color;
+      background-color: transparent;
+      transition: $transition;
+      &:hover {
+        color: #fff;
+        background-color: $main-color;
+      }
+    }
+  }
+}
