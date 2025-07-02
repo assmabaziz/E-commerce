@@ -1,0 +1,13 @@
+ @import "../../../../../assets/sass/main.scss";
+ .card {
+            img {
+                background-color: $baner-background-color;
+                max-height: 300px;
+            }
+            .card-body {
+                h5 {
+                    font-size: 1.1rem;
+                    font-weight: 600;
+                }
+            }
+        }

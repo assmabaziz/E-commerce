@@ -1,0 +1,19 @@
+@import "../../../../assets/sass/main.scss";
+section {
+  .container {
+    .heading {
+      h2 {
+        font-size: 2rem;
+        color: $main-color;
+      }
+      .heading-icons {
+        span {
+            transition: $transition;
+            &:hover {
+              background-color: $baner-background-color;
+            }
+          }
+        }
+      }
+    }
+}

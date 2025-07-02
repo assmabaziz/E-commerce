@@ -1,1 +1,26 @@
-<p>category-card works!</p>
+@if(category) {
+  <div class="card border-0">
+              <img
+                [src]="category.imgUrl"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body text-center">
+                <h5 class="mb-2"> {{category.name}}</h5>
+                <!-- <div class="card-footer bg-transparent border-0">
+                  <div class="row">
+                    <div class="col-6">
+                      <div class="wrapper border-end border-2 border-secondary">
+                        <span class="fw-semibold">$38.99</span>
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <div class="wrapper">
+                         <span class="fw-semibold">5.0 <i class="fa fa-star text-warning"></i></span>
+                      </div>
+                    </div>
+                  </div>
+                </div> -->
+              </div>
+            </div>
+}
