@@ -1,4 +1,4 @@
-<section class="bg-white py-5">
+<section class="py-5">
   <div class="container">
     <div class="heading mb-4 d-flex align-items-center justify-content-between">
       <h2 class="mb-4">
@@ -15,7 +15,7 @@
     </div>
     
     <div class="cards">
-      <div class="row gap-3 flex-nowrap">
+      <div class="row g-5"> 
         @for (category of categoriesList; track category) {
           <div class="col-md-3">
             <app-category-card [category]="category" />

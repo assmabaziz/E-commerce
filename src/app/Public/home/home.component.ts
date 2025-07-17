@@ -7,7 +7,7 @@ import { ShopByCategoriesComponent } from "./shop-by-categories/shop-by-categori
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [BannerComponent, BestSellerComponent, ShopByCategoriesComponent],
+  imports: [BannerComponent, BestSellerComponent, ShopByCategoriesComponent, BestSellerComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })

@@ -1,14 +1,10 @@
 @import"../../assets/sass/main.scss";
 main{
-    background-color: $baner-background-color;
         header {
             position: fixed;
             top: 0;
             left: 0;
             right: 0;
-        }
-        section {
-            padding-top: 100px;
-            // height: 100vh;
+            z-index: 100;
         }
     }
