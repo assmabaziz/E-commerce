@@ -1,0 +1,12 @@
+@import "../../../../assets/sass/main.scss";
+section {
+  .container {
+    background-color: $baner-background-color;
+    .month-deals-img {
+        img {
+            width: 65%;
+            transform: translateX(20%);
+        }
+    }
+  }
+}
