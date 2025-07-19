@@ -1,0 +1,59 @@
+@if(product){
+  <div class="card-best-seller">
+      <div
+        [class.hover-product-card]="isHovering"
+        (mouseenter)="changeHoveringStatus(true)"
+        (mouseleave)="changeHoveringStatus(false)"
+      >
+      <div class="hoverable-area position-relative">
+          <div class="card-img">
+              <img
+                [src]="product.imageUrl"
+                class="w-100"
+                [alt]="product.name"
+              />
+            </div>
+            @if(isHovering){
+            <div class="add-to-cart-btn">
+              <button class="rounded-2 border-0">Add to cart</button>
+            </div>
+            }
+             @if (isHovering) {
+          <div class="position-absolute card-actions">
+            <div class="d-flex flex-column">
+              <button class="btn btn-sm rounded-circle bg-white" aria-label="Add to favorites" type="button">
+                <i class="fa-regular fa-star"></i>
+              </button>
+              <button class="btn btn-sm rounded-circle bg-white my-2" aria-label="Share" type="button">
+                <i class="fa-solid fa-right-left"></i>
+              </button>
+              <button class="btn btn-sm rounded-circle bg-white" aria-label="View more" type="button">
+                <i class="fa-regular fa-eye"></i>
+              </button>
+            </div>
+          </div>
+        }
+      </div>
+    </div>
+    <div class="card-content py-2 text-center">
+      <h4 class="fw-bold">{{product.name}}</h4>
+      <div class="bg-transparent border-0">
+        <div class="row justify-content-center">
+          <div class="col-6 col-md-4  border-end border-2 border-black">
+            <div class="wrapper">
+              <span class="fw-semibold">{{product.price | currency}}</span>
+            </div>
+          </div>
+          <div class="col-6 col-md-4">
+            <div class="wrapper">
+              <span class="fw-semibold text-decoration-line-through text-black-50"
+                > {{product.oldPrice | currency}}
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+}
+
