@@ -4,9 +4,9 @@
       <h2 class="font-courier fw-bolder">Feedback Corner</h2>
     </div>
     <div class="row g-4 mb-2">
-      @for(item of [1,2,3]; track item) {
+      @for(comment of comments; track comment) {
       <div class="col-md-4">
-        <app-customer-comment />
+        <app-customer-comment [comment]= "comment"/>
       </div>
       }
     </div>

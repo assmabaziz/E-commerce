@@ -1,6 +1,7 @@
 @import "../../../../../assets/sass/main.scss";
 .comment-wrapper {
   box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.9);
+  min-height: 200px;
   transition: $transition;
   &:hover {
     background-color: $baner-background-color;
