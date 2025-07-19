@@ -1,12 +1,24 @@
-<section>
-    <div class="container">
-        <p>customer-comment-list works!</p>
-        <div class="row g-4">
-            @for(item of [1,2,3]; track item) {
-                <div class="col-md-4">
-                    <app-customer-comment/>
-                </div>
-            }
-        </div>
+<section class="py-5">
+  <div class="container">
+    <div class="section-title mb-5 text-center">
+      <h2 class="font-courier fw-bolder">Feedback Corner</h2>
     </div>
+    <div class="row g-4 mb-2">
+      @for(item of [1,2,3]; track item) {
+      <div class="col-md-4">
+        <app-customer-comment />
+      </div>
+      }
+    </div>
+    <div
+      class="section-footer py-5 d-flex justify-content-center align-items-center"
+    >
+      <span class="d-flex justify-content-center align-items-center rounded-2 me-3">
+        <i class="fa-solid fa-chevron-left fa-xl"></i>
+      </span>
+      <span class="d-flex justify-content-center align-items-center rounded-2 ">
+        <i class="fa-solid fa-chevron-right fa-xl"></i>
+      </span>
+    </div>
+  </div>
 </section>
