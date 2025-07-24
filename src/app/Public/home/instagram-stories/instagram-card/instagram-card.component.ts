@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { IStory } from '../../../../Shared/Models/istory';
 
 @Component({
   selector: 'app-instagram-card',
@@ -8,6 +9,7 @@ import { Component } from '@angular/core';
   styleUrl: './instagram-card.component.scss'
 })
 export class InstagramCardComponent {
+  @Input({required: true}) story !: IStory 
 shown: boolean = false;
 
 showLayer(show:boolean) :void {

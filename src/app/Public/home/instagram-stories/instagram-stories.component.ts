@@ -13,7 +13,7 @@ export class InstagramStoriesComponent {
 
   listStories : IStory[] = [
     {
-      imgUrl:'assets/images/instagram_stories/story1.jpeg'
+      imgUrl:'assets/images/instagram_stories/story0.jpeg'
     },
     {
       imgUrl:'assets/images/instagram_stories/story2.jpeg'
