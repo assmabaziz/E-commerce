@@ -1,1 +1,14 @@
-<p>instagram-stories works!</p>
+<section class="instagram-stories">
+  <div class="container">
+     <div class="section-title mb-5 text-center">
+      <h2 class="font-courier fw-bolder">Our instagarm stories</h2>
+    </div>
+    <div class="row g-3">
+      @for (story of listStories; track story) {
+      <div class="col-md-3">
+        <app-instagram-card />
+      </div>
+      }
+    </div>
+  </div>
+</section>

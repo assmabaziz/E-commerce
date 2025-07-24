@@ -8,5 +8,9 @@ import { Component } from '@angular/core';
   styleUrl: './instagram-card.component.scss'
 })
 export class InstagramCardComponent {
+shown: boolean = false;
 
+showLayer(show:boolean) :void {
+  this.shown = show
+}
 }

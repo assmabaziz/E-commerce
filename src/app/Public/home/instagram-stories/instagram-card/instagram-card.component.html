@@ -1,1 +1,18 @@
-<p>instagram-card works!</p>
+<div class="instagram-card cursor-pointer">
+  <div class="card-wrapper">
+    <div class="layer-shown" >
+      <div class="instagram-card-img">
+        <img
+          src="assets/images/instagram_stories/story1.jpeg"
+          class="w-100"
+          alt=""
+        />
+      </div>
+      <div class="layer d-flex justify-content-center align-items-center"  [class.test]="shown" (mouseenter)="showLayer(true)" (mouseleave)="showLayer(false)">
+        <span class="d-flex justify-content-center align-items-center ">
+            <i class="fa-brands fa-instagram h1 mb-0"></i>
+        </span>
+      </div>
+    </div>
+  </div>
+</div>

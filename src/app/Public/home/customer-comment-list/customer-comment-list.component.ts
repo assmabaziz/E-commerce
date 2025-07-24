@@ -20,16 +20,16 @@ export class CustomerCommentListComponent {
       stars:5
     },
     {
-      title: 'Aditya Chopra',
+      title: 'Jhon Doe',
       text: 'I absolutely love the quality and style of the clothing I purchased from this website. customer service was outstanding, and I received my order quickly. Highly recommended !',
-      imgUrl:'assets/images/testimonials/lady_one.jpg',
-      userRole:'CoFounder',
+      imgUrl:'assets/images/testimonials/co-founder.jpeg',
+      userRole:'Fashion designer',
       stars :5
     },
     {
-      title: 'Emily Wilson',
+      title: 'James Wilson',
       text: 'I had a great experience shopping on this website. The clothes I brought are fashionable and comfortable. Highly satisfied!',
-      imgUrl:'assets/images/testimonials/lady_three.jpg',
+      imgUrl:'assets/images/testimonials/fashion-designer.jpeg',
       userRole:'Fashion designer',
       stars:5
     },
