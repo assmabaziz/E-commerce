@@ -1,15 +1,20 @@
 @import "../../../../../assets/sass/main.scss";
 .comment-wrapper {
   box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.9);
-  min-height: 200px;
+  min-height: 220px;
   transition: $transition;
   &:hover {
     background-color: $baner-background-color;
   }
-  .heading {
-    .title {
-      h3 {
-        color: $main-color;
+  .name-customer {
+    h5 {
+      color: $main-color;
+    }
+    .customer-avatar {
+      img {
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
       }
     }
   }

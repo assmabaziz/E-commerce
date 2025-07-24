@@ -1,15 +1,32 @@
 <div class="comment-wrapper p-3 cursor-pointer">
   <div class="heading">
-    <div class="quote-sybole mb-2">
-      <i class="fa-solid fa-quote-left fa-xl"></i>
-    </div>
-    <div class="title">
-      <h3 class="fw-medium">{{comment.title}}</h3>
+    <div class="quote-sybole mb-2 d-flex gap-1 mb-3">
+      @for (star of [].constructor(comment.stars); track star) {
+      <span>
+        <i class="fa-solid fa-star fa-xl text-warning"></i>
+      </span>
+      }
     </div>
   </div>
   <div class="content">
     <p>
-     {{comment.text}}
+      {{ comment.text }}
     </p>
+  </div>
+  <div class="name-customer">
+    <div class="row align-items-center">
+      <div class="col-md-2">
+         <div class="customer-avatar">
+          <img [src]="comment.imgUrl" alt="" />
+        </div>
+        
+      </div>
+      <div class="col-md-10">
+        <div>
+          <h5 class="fw-bold mb-0">{{ comment.title }}</h5>
+          <h6 class="fw-medium text-black-50">{{comment.userRole}}</h6>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
