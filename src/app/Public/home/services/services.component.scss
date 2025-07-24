@@ -1,0 +1,17 @@
+section {
+    .container {
+       .service-box {
+       .service-box-icon {
+        &.icon-dollar {
+            height: 30px;
+            width: 30px;
+            border-radius: 50%;
+            border: 2px solid #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+       }
+       }
+    }
+}

@@ -6,6 +6,7 @@ import { ShopByCategoriesComponent } from './shop-by-categories/shop-by-categori
 import { MonthDealsComponent } from './month-deals/month-deals.component';
 import { CustomerCommentListComponent } from './customer-comment-list/customer-comment-list.component';
 import { InstagramStoriesComponent } from './instagram-stories/instagram-stories.component';
+import { ServicesComponent } from './services/services.component';
 
 @Component({
   selector: 'app-home',
@@ -17,7 +18,8 @@ import { InstagramStoriesComponent } from './instagram-stories/instagram-stories
     BestSellerComponent,
     MonthDealsComponent,
     CustomerCommentListComponent,
-    InstagramStoriesComponent
+    InstagramStoriesComponent,
+    ServicesComponent
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
