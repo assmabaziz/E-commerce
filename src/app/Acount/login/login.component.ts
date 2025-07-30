@@ -1,9 +1,11 @@
 import { Component } from '@angular/core';
 
+import { MaterialModule } from '../../Shared/Modules/material.module';
+
 @Component({
   selector: 'app-login',
   standalone: true,
-  imports: [],
+  imports: [MaterialModule],
   templateUrl: './login.component.html',
   styleUrl: './login.component.scss'
 })
