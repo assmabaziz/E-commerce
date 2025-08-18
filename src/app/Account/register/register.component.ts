@@ -12,7 +12,8 @@ import { MaterialModule } from '../../Shared/Modules/material.module';
 })
 export class RegisterComponent {
   registerForm!: FormGroup;
-  hide: boolean = false;
+  hidePassword: boolean = true;
+  hideConfirmPassword: boolean = true;
   constructor(private formbuilder: FormBuilder, private router: Router) {}
   ngOnInit(): void {
     this.initFormModels();
@@ -32,6 +33,7 @@ export class RegisterComponent {
       lastName:['',[Validators.required, Validators.minLength(4), Validators.maxLength(10)]],
       email: ['', [Validators.required, Validators.email]],
       password: ['', [Validators.required, Validators.minLength(8)]],
+      confirmPassword: ['', [Validators.required, Validators.minLength(8)]],
       agreeTerms: [true],
     });
   }

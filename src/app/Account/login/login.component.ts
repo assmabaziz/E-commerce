@@ -13,7 +13,7 @@ import { Router } from '@angular/router';
 })
 export class LoginComponent implements OnInit {
   loginForm!: FormGroup;
-  hide: boolean = false;
+  hide: boolean = true;
   constructor(private formbuilder: FormBuilder, private router: Router) {}
   ngOnInit(): void {
     this.initFormModels();

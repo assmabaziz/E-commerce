@@ -2,11 +2,11 @@
   <div class="container-fluid px-0 h-100 overflow-hidden">
     <div class="row mx-0">
       <div class="col-md-6 px-0">
-        <img src="assets/images/Account/bgLogin1.jpeg" alt="" />
+        <img src="../../../assets/images/Account/register1.jpg" alt="" />
       </div>
-      <div class="col-md-5 col-12 p-5 d-flex align-items-center">
+      <div class="col-md-5 col-12 px-5 py-3 d-flex align-items-center">
         <div class="row w-100 justify-content-center">
-          <div class="col-12 mb-5">
+          <div class="col-12 mb-4">
             <div
               class="d-flex justify-content-center align-items-start flex-column px-5"
             >
@@ -21,7 +21,7 @@
                 (ngSubmit)="register()"
                 class="row"
               >
-                <mat-form-field appearance="outline" class="col-12 mb-3">
+                <mat-form-field appearance="outline" class="col-12 mb-2">
                   <mat-label>First name</mat-label>
                   <input matInput type="text" formControlName="firstName" />
                   @if(registerForm.get('firstName')?.hasError('required')) {
@@ -35,7 +35,7 @@
                   }
                 </mat-form-field>
 
-                <mat-form-field appearance="outline" class="col-12 mb-3">
+                <mat-form-field appearance="outline" class="col-12 mb-2">
                   <mat-label>Last name</mat-label>
                   <input matInput type="text" formControlName="lastName" />
                   @if(registerForm.get('lastName')?.hasError('required')) {
@@ -49,8 +49,7 @@
                   }
                 </mat-form-field>
 
-
-                <mat-form-field appearance="outline" class="col-12 mb-3">
+                <mat-form-field appearance="outline" class="col-12 mb-2">
                   <mat-label>Email adress</mat-label>
                   <input matInput type="email" formControlName="email" />
                   @if(registerForm.get('email')?.hasError('required')) {
@@ -60,23 +59,27 @@
                   }
                 </mat-form-field>
 
-                <mat-form-field appearance="outline" class="col-12 mb-3">
+
+
+
+                
+                <mat-form-field appearance="outline" class="col-12 mb-2">
                   <mat-label>Enter your password</mat-label>
                   <input
                     matInput
-                    [type]="hide ? 'password' : 'text'"
+                    [type]="hidePassword ? 'password' : 'text'"
                     formControlName="password"
                   />
                   <button
                     mat-icon-button
                     matSuffix
-                    (click)="hide = !hide"
+                    (click)="hidePassword = !hidePassword"
                     [attr.aria-label]="'Hide password'"
-                    [attr.aria-pressed]="hide"
-                    class="border-0 bg-transparent"
+                    [attr.aria-pressed]="hidePassword"
+                    class="bg-body text-black border-0 me-1"
                   >
                     <mat-icon>{{
-                      hide ? "visibility_off" : "visibility"
+                      hidePassword ? "visibility_off" : "visibility"
                     }}</mat-icon>
                   </button>
                   @if(registerForm.get('password')?.hasError('required')) {
@@ -85,6 +88,37 @@
                   <mat-error>Password must be at least 8 characters</mat-error>
                   }
                 </mat-form-field>
+
+
+
+
+
+
+                <mat-form-field appearance="outline" class="col-12 mb-2">
+                  <mat-label>Confirm your password</mat-label>
+                  <input
+                    matInput
+                    [type]="hideConfirmPassword ? 'password' : 'text'"
+                    formControlName="confirmPassword"
+                  />
+                  <button
+                    mat-icon-button
+                    matSuffix
+                    (click)="hideConfirmPassword = !hideConfirmPassword"
+                    [attr.aria-label]="'Hide password'"
+                    [attr.aria-pressed]="hideConfirmPassword"
+                    class="bg-body text-black border-0 me-1"
+                  >
+                    <mat-icon>{{
+                      hideConfirmPassword ? "visibility_off" : "visibility"
+                    }}</mat-icon>
+                  </button>
+                </mat-form-field>
+
+
+
+
+
                 <div class="col-12">
                   <div>
                     <mat-checkbox color="primary" formControlName="agreeTerms"
