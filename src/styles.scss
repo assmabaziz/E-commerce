@@ -1,4 +1,10 @@
+@import "assets/sass/main.scss";
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
-@import "assets/sass/main.scss";
+
+.mat-mdc-checkbox-checked .mdc-checkbox__background,
+.mat-mdc-checkbox.mat-mdc-checkbox-checked .mdc-checkbox__ripple {
+  background-color: $main-color !important;
+  border-color: $main-color !important;
+}

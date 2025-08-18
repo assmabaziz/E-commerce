@@ -1,8 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 
 import { MaterialModule } from '../../Shared/Modules/material.module';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { Router } from '@angular/router';
+import { Location } from '@angular/common';
 
 @Component({
   selector: 'app-forgot-password',
@@ -11,10 +11,11 @@ import { Router } from '@angular/router';
   templateUrl: './forgot-password.component.html',
   styleUrl: './forgot-password.component.scss',
 })
-
 export class ForgotPasswordComponent {
   forgotPasswordForm!: FormGroup;
-  constructor(private formbuilder: FormBuilder, private router: Router) {}
+  private readonly location = inject(Location);
+  private readonly formbuilder = inject(FormBuilder)
+  
   ngOnInit(): void {
     this.initFormModels();
   }
@@ -23,7 +24,7 @@ export class ForgotPasswordComponent {
   }
 
   navigateToLoginPage(): void {
-    this.router.navigateByUrl('login');
+    this.location.back();
   }
   private initFormModels(): void {
     this.forgotPasswordForm = this.formbuilder.group({

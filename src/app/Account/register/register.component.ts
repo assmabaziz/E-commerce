@@ -1,12 +1,38 @@
 import { Component } from '@angular/core';
+import { FormGroup, FormBuilder, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
+import { MaterialModule } from '../../Shared/Modules/material.module';
 
 @Component({
   selector: 'app-register',
   standalone: true,
-  imports: [],
+  imports: [MaterialModule],
   templateUrl: './register.component.html',
   styleUrl: './register.component.scss'
 })
 export class RegisterComponent {
-
+  registerForm!: FormGroup;
+  hide: boolean = false;
+  constructor(private formbuilder: FormBuilder, private router: Router) {}
+  ngOnInit(): void {
+    this.initFormModels();
+  }
+  register(): void {
+    console.log(this.registerForm.value);
+  }
+  navigateToForgetPasswordPage(): void {
+    this.router.navigateByUrl('forgot-password');
+  }
+  navigateToLoginPage(): void {
+    this.router.navigateByUrl("login")
+  }
+  private initFormModels(): void {
+    this.registerForm = this.formbuilder.group({
+      firstName:['',[Validators.required, Validators.minLength(4), Validators.maxLength(10)]],
+      lastName:['',[Validators.required, Validators.minLength(4), Validators.maxLength(10)]],
+      email: ['', [Validators.required, Validators.email]],
+      password: ['', [Validators.required, Validators.minLength(8)]],
+      agreeTerms: [true],
+    });
+  }
 }
