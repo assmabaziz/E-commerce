@@ -1,0 +1,94 @@
+<section>
+  <div class="container-fluid px-0 h-100 overflow-hidden">
+    <div class="row mx-0">
+      <div class="col-md-6 px-0">
+        <img src="assets/images/Account/bgLogin1.jpeg" alt="" />
+      </div>
+      <div class="col-md-5 col-12 p-5 d-flex align-items-center">
+        <div class="row w-100 justify-content-center">
+          <div class="col-12 mb-4">
+            <div
+              class="d-flex justify-content-center align-items-start flex-column px-5"
+            >
+              <h1 class="fw-bold mb-0">Welcome 👋</h1>
+              <div class="text-muted">Please login here</div>
+            </div>
+          </div>
+          <div class="col-md-10 col-12">
+            <div class="login-form">
+              <form [formGroup]="loginForm" (ngSubmit)="signIn()" class="row">
+                <mat-form-field appearance="outline" class="col-12 mb-3">
+                  <mat-label>Email adress</mat-label>
+                  <input matInput type="email" formControlName="email" />
+                  @if(loginForm.get('email')?.hasError('required')) {
+                  <mat-error>email required</mat-error>
+                  } @if(loginForm.get('email')?.hasError('email')) {
+                  <mat-error>email not valid</mat-error>
+                  }
+                </mat-form-field>
+
+                <mat-form-field appearance="outline" class="col-12 mb-3">
+                  <mat-label>Enter your password</mat-label>
+                  <input
+                    matInput
+                    [type]="hide ? 'password' : 'text'"
+                    formControlName="password"
+                  />
+                  <button
+                    mat-icon-button
+                    matSuffix
+                    (click)="hide = !hide"
+                    [attr.aria-label]="'Hide password'"
+                    [attr.aria-pressed]="hide"
+                    class="border-0 bg-transparent"
+                  >
+                    <mat-icon>{{
+                      hide ? "visibility_off" : "visibility"
+                    }}</mat-icon>
+                  </button>
+                  @if(loginForm.get('password')?.hasError('required')) {
+                  <mat-error>password required</mat-error>
+                  } @if(loginForm.get('password')?.hasError('minlength')) {
+                  <mat-error>Password must be at least 8 characters</mat-error>
+                  }
+                </mat-form-field>
+                <div class="col-12">
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <mat-checkbox formControlName="rememberMe"
+                      >Remember Me</mat-checkbox
+                    >
+                    <a
+                      class="text-dark cursor-pointer"
+                      (click)="navigateToForgetPasswordPage()"
+                      >Forget Password?</a
+                    >
+                  </div>
+                </div>
+                <div class="col-12 mt-3">
+                  <button
+                    class="btn border rounded-2 py-2 w-100 mb-3"
+                    [disabled]="loginForm.invalid"
+                  >
+                    Login
+                  </button>
+                  <p>
+                    You have not account?
+                    <span>
+                      <a
+                        class="anchor cursor-pointer fw-medium"
+                        (click)="navigateToRegisterPage()"
+                        >Register</a
+                      ></span
+                    >
+                  </p>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

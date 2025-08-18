@@ -1,0 +1,23 @@
+@mixin shared-style {
+    max-height: 100vh;
+    .container-fluid {
+      img {
+        max-height: 100vh;
+        width: 100%;
+      }
+      .login-form {
+        button {
+          background-color: $main-color;
+          transition: $transition;
+          color:#fff;
+          font-size: 1.1rem;
+          &:hover {
+            background-color: $color-hover;
+          }
+        }
+        .anchor {
+          color: $main-color;
+        }
+      }
+    }
+  }

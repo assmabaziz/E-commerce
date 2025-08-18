@@ -24,6 +24,9 @@ export class LoginComponent implements OnInit {
   navigateToForgetPasswordPage(): void {
     this.router.navigateByUrl('forgot-password');
   }
+  navigateToRegisterPage(): void {
+    this.router.navigateByUrl('register');
+  }
   private initFormModels(): void {
     this.loginForm = this.formbuilder.group({
       email: ['', [Validators.required, Validators.email]],

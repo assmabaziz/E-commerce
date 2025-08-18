@@ -7,17 +7,17 @@ export const routes: Routes = [
     },
     {
         path:'login',
-        loadComponent:()=> import ('./Acount/login/login.component').then(c=>c.LoginComponent),
+        loadComponent:()=> import ('./Account/login/login.component').then(c => c.LoginComponent),
         title:'Login'
     },
     {
         path:'register',
-        loadComponent:()=> import ('./Acount/register/register.component').then(c=>c.RegisterComponent),
+        loadComponent:()=> import ('./Account/register/register.component').then(c => c.RegisterComponent),
         title:'Register'
     },
     {
         path:'forgot-password',
-        loadComponent:()=> import ('./Acount/forgot-password/forgot-password.component').then(c=>c.ForgotPasswordComponent),
+        loadComponent:()=> import ('./Account/forgot-password/forgot-password.component').then(c => c.ForgotPasswordComponent),
         title:'Forgot pasword'
     },
     {
