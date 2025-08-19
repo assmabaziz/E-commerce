@@ -113,6 +113,14 @@
                       hideConfirmPassword ? "visibility_off" : "visibility"
                     }}</mat-icon>
                   </button>
+                   @if(registerForm.get('confirmPassword')?.hasError('required')) {
+                  <mat-error>Field required</mat-error>
+                  } @if(registerForm.get('confirmPassword')?.hasError('minlength')) {
+                  <mat-error>At least 8 characters</mat-error>
+                  }
+                  @if(registerForm.get('confirmPassword')?.hasError('mustMatch')) {
+                  <mat-error>Password and it's confirmation should be identical</mat-error>
+                  }
                 </mat-form-field>
 
 
@@ -147,6 +155,11 @@
                     >
                   </p>
                 </div>
+
+
+
+
+                {{registerForm.get('confirmPassword')?.errors | json}}
               </form>
             </div>
           </div>

@@ -3,6 +3,7 @@ import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 
 import { SharedModule } from '@app/shared';
+import { ValidationService } from 'app/Shared/Services';
 
 @Component({
   selector: 'app-register',
@@ -36,6 +37,10 @@ export class RegisterComponent {
       password: ['', [Validators.required, Validators.minLength(8)]],
       confirmPassword: ['', [Validators.required, Validators.minLength(8)]],
       agreeTerms: [true],
-    });
+    },
+    {
+      validators: ValidationService.mustMatch('password', 'confirmPassword')
+    }
+  );
   }
 }
