@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 
-import { SharedModule } from '../../../Shared/shared.module';
+import { SharedModule } from '@app/shared';
 
 @Component({
   selector: 'app-register',
