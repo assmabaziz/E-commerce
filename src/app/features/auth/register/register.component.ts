@@ -12,7 +12,7 @@ import { SharedModule } from '@app/shared';
   styleUrl: './register.component.scss'
 })
 export class RegisterComponent {
-  registerForm!: FormGroup;
+  registerForm: FormGroup;
   hidePassword: boolean = true;
   hideConfirmPassword: boolean = true;
   constructor(private formbuilder: FormBuilder, private router: Router) {}

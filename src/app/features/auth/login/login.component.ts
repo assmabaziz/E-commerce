@@ -12,7 +12,7 @@ import { SharedModule } from '@app/shared';
   styleUrl: './login.component.scss',
 })
 export class LoginComponent implements OnInit {
-  loginForm!: FormGroup;
+  loginForm: FormGroup;
   hide: boolean = true;
   constructor(private formbuilder: FormBuilder, private router: Router) {}
   ngOnInit(): void {

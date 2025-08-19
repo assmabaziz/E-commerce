@@ -12,7 +12,7 @@ import { SharedModule } from '@app/shared';
   styleUrl: './forgot-password.component.scss',
 })
 export class ForgotPasswordComponent {
-  forgotPasswordForm!: FormGroup;
+  forgotPasswordForm: FormGroup;
   private readonly location = inject(Location);
   private readonly formbuilder = inject(FormBuilder)
   

@@ -26,7 +26,9 @@
     "paths": {
       "@app/shared" : ["app/shared/shared.module.ts"],
       "app/services" : ["app/shared/services"]
-      }   
+      },
+      "strictPropertyInitialization": false,
+      "noUnusedLocals": true 
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
