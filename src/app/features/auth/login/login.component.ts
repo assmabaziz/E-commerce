@@ -1,13 +1,13 @@
 import { Component, OnInit } from '@angular/core';
-
-import { MaterialModule } from '../../../Shared/material/material.module';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
+
+import { SharedModule } from '../../../Shared/shared.module';
 
 @Component({
   selector: 'app-login',
   standalone: true,
-  imports: [MaterialModule],
+  imports: [SharedModule],
   templateUrl: './login.component.html',
   styleUrl: './login.component.scss',
 })

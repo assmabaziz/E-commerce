@@ -1,12 +1,13 @@
 import { Component } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
-import { MaterialModule } from '../../../Shared/material/material.module';
+
+import { SharedModule } from '../../../Shared/shared.module';
 
 @Component({
   selector: 'app-register',
   standalone: true,
-  imports: [MaterialModule],
+  imports: [SharedModule],
   templateUrl: './register.component.html',
   styleUrl: './register.component.scss'
 })

@@ -2,12 +2,12 @@ import { Component, inject } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Location } from '@angular/common';
 
-import { MaterialModule } from '../../../Shared/material/material.module';
+import { SharedModule } from '../../../Shared/shared.module';
 
 @Component({
   selector: 'app-forgot-password',
   standalone: true,
-  imports: [MaterialModule],
+  imports: [SharedModule],
   templateUrl: './forgot-password.component.html',
   styleUrl: './forgot-password.component.scss',
 })
