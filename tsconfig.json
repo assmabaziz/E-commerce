@@ -24,7 +24,8 @@
       "dom"
     ],
     "paths": {
-      "@app/shared" : ["app/shared/shared.module.ts"],
+      "@app/*": ["app/*"],
+      "@app/shared/*": ["app/shared/*"],
       "app/services" : ["app/shared/services"]
       },
       "strictPropertyInitialization": false,
