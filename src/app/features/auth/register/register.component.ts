@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
-import { MaterialModule } from '../../Shared/Modules/material.module';
+import { MaterialModule } from '../../../Shared/material/material.module';
 
 @Component({
   selector: 'app-register',

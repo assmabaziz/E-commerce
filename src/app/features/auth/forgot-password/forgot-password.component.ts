@@ -1,8 +1,8 @@
 import { Component, inject } from '@angular/core';
-
-import { MaterialModule } from '../../Shared/Modules/material.module';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Location } from '@angular/common';
+
+import { MaterialModule } from '../../../Shared/material/material.module';
 
 @Component({
   selector: 'app-forgot-password',
