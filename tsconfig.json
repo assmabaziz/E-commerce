@@ -25,6 +25,7 @@
     ],
     "paths": {
       "@app/*": ["app/*"],
+      "@app/shared": ["app/shared/index.ts"],
       "@app/shared/*": ["app/shared/*"],
       "app/services" : ["app/shared/services"]
       },
