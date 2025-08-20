@@ -2,7 +2,8 @@ import { Component, inject } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Location } from '@angular/common';
 
-import { SharedModule } from '@app/shared';
+import { SharedModule } from '../../../Shared/shared.module';
+
 
 @Component({
   selector: 'app-forgot-password',

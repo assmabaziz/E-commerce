@@ -2,8 +2,9 @@ import { Component } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 
-import { SharedModule } from '@app/shared';
-import { ValidationService } from 'app/Shared/Services';
+import { ValidationService } from '../../../Shared/Services/validation.service';
+import { SharedModule } from '../../../Shared/shared.module';
+
 
 @Component({
   selector: 'app-register',
