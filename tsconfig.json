@@ -2,6 +2,7 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
+      "baseUrl": "./src",
     "outDir": "./dist/out-tsc",
     "strict": true,
     "noImplicitOverride": true,
@@ -22,6 +23,10 @@
       "ES2022",
       "dom"
     ],
+    "paths": {
+      "@app/shared": ["app/shared/shared.module.ts"],
+      "@app/services": ["app/shared/services"]
+    },
       "strictPropertyInitialization": false,
       "noUnusedLocals": true 
   },

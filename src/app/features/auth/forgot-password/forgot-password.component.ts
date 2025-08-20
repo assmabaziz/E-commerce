@@ -2,7 +2,7 @@ import { Component, inject } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Location } from '@angular/common';
 
-import { SharedModule } from '../../../Shared/shared.module';
+import { SharedModule } from '@app/shared';
 
 
 @Component({
